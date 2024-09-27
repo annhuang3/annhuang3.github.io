@@ -1,13 +1,137 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>The Book Nook</title>
-    </head>
-    <body>
-        <h1>The Book Nook</h1>
-        <p>As an avid reader, I can point out a good read, and lucky for you, here is my shortlist of favorite books!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Nook</title>
+    <style>
+        body {
+            font-family: Century Gothic, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
 
-    </body>
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .book-item {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-info h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .book-info h3 {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+
+        .book-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .book-info button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .book-info button:hover {
+            background-color: #0056b3;
+        }
+
+        .book-cover {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Favorite Books</h1>
+
+    <div class="book-list">
+
+        <!-- Book 1 -->
+        <div class="book-item">
+            <img class="book-cover" src="cover1.jpg" alt="Book 1 Cover">
+            <div class="book-info">
+                <h2>Book Title 1</h2>
+                <h3>Author Name 1 - Published Year 1</h3>
+                <p>This is a short summary of the book. It provides a glimpse of what the book is about and why it's one of my favorites.</p>
+                <button onclick="window.location.href='https://www.amazon.com/your-book-link-1'">Buy on Amazon</button>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-item">
+            <img class="book-cover" src="cover2.jpg" alt="Book 2 Cover">
+            <div class="book-info">
+                <h2>Book Title 2</h2>
+                <h3>Author Name 2 - Published Year 2</h3>
+                <p>This is a short summary of the book. It provides a glimpse of what the book is about and why it's one of my favorites.</p>
+                <button onclick="window.location.href='https://www.amazon.com/your-book-link-2'">Buy on Amazon</button>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-item">
+            <img class="book-cover" src="cover3.jpg" alt="Book 3 Cover">
+            <div class="book-info">
+                <h2>Book Title 3</h2>
+                <h3>Author Name 3 - Published Year 3</h3>
+                <p>This is a short summary of the book. It provides a glimpse of what the book is about and why it's one of my favorites.</p>
+                <button onclick="window.location.href='https://www.amazon.com/your-book-link-3'">Buy on Amazon</button>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-item">
+            <img class="book-cover" src="cover4.jpg" alt="Book 4 Cover">
+            <div class="book-info">
+                <h2>Book Title 4</h2>
+                <h3>Author Name 4 - Published Year 4</h3>
+                <p>This is a short summary of the book. It provides a glimpse of what the book is about and why it's one of my favorites.</p>
+                <button onclick="window.location.href='https://www.amazon.com/your-book-link-4'">Buy on Amazon</button>
+            </div>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-item">
+            <img class="book-cover" src="cover5.jpg" alt="Book 5 Cover">
+            <div class="book-info">
+                <h2>Book Title 5</h2>
+                <h3>Author Name 5 - Published Year 5</h3>
+                <p>This is a short summary of the book. It provides a glimpse of what the book is about and why it's one of my favorites.</p>
+                <button onclick="window.location.href='https://www.amazon.com/your-book-link-5'">Buy on Amazon</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
 </html>
-
